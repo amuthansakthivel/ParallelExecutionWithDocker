@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="com.listener.ListenerClass"/>
+  </listeners>
+  <test thread-count="3" name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.testcases.HomePageTests">
+        <methods>
+          <include name="validateSearchInHomePage" invocation-numbers="1 0"/>
+          <include name="tearDown"/>
+          <include name="quitBrowser"/>
+          <include name="setUpExtentReports"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.testcases.HomePageTests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
