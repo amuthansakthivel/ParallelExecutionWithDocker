@@ -3,11 +3,13 @@
 <suite thread-count="3" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="methods">
   <listeners>
     <listener class-name="com.listener.ListenerClass"/>
+    <listener class-name="com.listener.AnnotationTransformer"/>
   </listeners>
   <test thread-count="3" verbose="0" name="Test(failed)" parallel="methods">
     <classes>
       <class name="com.testcases.HomePageTests">
         <methods>
+          <include name="validateErrorMessageOnLogin" invocation-numbers="0 1"/>
           <include name="validateSearchInHomePage" invocation-numbers="1 0"/>
           <include name="tearDown"/>
           <include name="quitBrowser"/>
@@ -16,6 +18,15 @@
           <include name="afterSuite"/>
         </methods>
       </class> <!-- com.testcases.HomePageTests -->
+      <class name="com.testcases.SignInPageTests">
+        <methods>
+          <include name="validateErrorMessageOnLoginSignInPage" invocation-numbers="0 1"/>
+          <include name="setUpExtentReports"/>
+          <include name="setUp"/>
+          <include name="quitBrowser"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.testcases.SignInPageTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

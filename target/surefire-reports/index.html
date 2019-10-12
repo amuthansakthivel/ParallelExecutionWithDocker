@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testcases.HomePageTests" hash-for-method="validateSearchInHomePage({searchvalue=Blouse, password=, email=, browser=chrome, errormessage=, TestCaseName=validateSearchIn...)">validateSearchInHomePage({searchvalue=Blouse, password=, email=, browser=chrome, errormessage=, TestCaseName=validateSearchIn...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testcases.HomePageTests" hash-for-method="validateSearchInHomePage({searchvalue=Printed Dress, password=, email=, browser=firefox, errormessage=, TestCaseName=validate...)">validateSearchInHomePage({searchvalue=Printed Dress, password=, email=, browser=firefox, errormessage=, TestCaseName=validate...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">0 methods,   </span>
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,94 +103,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.testcases.HomePageTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateSearchInHomePage({searchvalue=Blouse, password=, email=, browser=chrome, errormessage=, TestCaseName=validateSearchIn...)">
-                  </a> <!-- validateSearchInHomePage({searchvalue=Blouse, password=, email=, browser=chrome, errormessage=, TestCaseName=validateSearchIn...) -->
-                  <span class="method-name">validateSearchInHomePage</span>
-                  <span class="parameters">({searchvalue=Blouse, password=, email=, browser=chrome, errormessage=, TestCaseName=validateSearchInHomePage})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;search_query_top&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.utilities.TestUtils.explicitlyWait(TestUtils.java:47)
-	at com.utilities.TestUtils.sendKeys(TestUtils.java:40)
-	at com.pages.HomePage.enterValueToSearch(HomePage.java:33)
-	at com.testcases.HomePageTests.validateSearchInHomePage(HomePageTests.java:36)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;search_query_top&apos;]&quot;}
-  (Session info: chrome=77.0.3865.75)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;INMAAWN53000190&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.ox0qqh}, goog:chromeOptions: {debuggerAddress: localhost:35167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 8c9973759d6de6c83ebf85a4a00...}
-Session ID: 8c9973759d6de6c83ebf85a4a000e660
-*** Element info: {Using=xpath, value=//input[@id=&apos;search_query_top&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy28.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 19 more
-... Removed 13 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateSearchInHomePage({searchvalue=Printed Dress, password=, email=, browser=firefox, errormessage=, TestCaseName=validate...)">
-                  </a> <!-- validateSearchInHomePage({searchvalue=Printed Dress, password=, email=, browser=firefox, errormessage=, TestCaseName=validate...) -->
-                  <span class="method-name">validateSearchInHomePage</span>
-                  <span class="parameters">({searchvalue=Printed Dress, password=, email=, browser=firefox, errormessage=, TestCaseName=validateSearchInHomePage})</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=connectionFailure&amp;u=http%3A//automationpractice.com/index.php&amp;c=UTF-8&amp;f=regular&amp;d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20automationpractice.com.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;INMAAWN53000190&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190827005903, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 70, moz:profile: /tmp/rust_mozprofile9p92YP, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.9.184-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 8800b8e3-3295-4ec7-855c-15a...}
-Session ID: 8800b8e3-3295-4ec7-855c-15a6ebf24d99
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.testcases.BaseTest.navigateToURL(BaseTest.java:168)
-	at com.testcases.HomePageTests.validateSearchInHomePage(HomePageTests.java:34)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 13 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -222,6 +115,7 @@ Session ID: 8800b8e3-3295-4ec7-855c-15a6ebf24d99
 &lt;suite thread-count=&quot;3&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;methods&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.listener.ListenerClass&quot;/&gt;
+    &lt;listener class-name=&quot;com.listener.AnnotationTransformer&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;3&quot; verbose=&quot;0&quot; name=&quot;Test&quot; parallel=&quot;methods&quot;&gt;
     &lt;classes&gt;
@@ -267,20 +161,11 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
-data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateSearchInHomePage')
-data.setCell(0, 2, 'com.testcases.HomePageTests')
-data.setCell(0, 3, 41979);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateSearchInHomePage')
-data.setCell(1, 2, 'com.testcases.HomePageTests')
-data.setCell(1, 3, 26526);
+data.addRows(0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -331,35 +216,67 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpExtentReports</span>
-                <span class="method-start">30034 ms</span>
+                <span class="method-start">30068 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.SignInPageTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpExtentReports</span>
+                <span class="method-start">30069 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.HomePageTests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validateSearchInHomePage({searchvalue=Printed Dress, password=, email=, browser=firefox, errormessage=, TestCaseName=validate...)</span>
-                <span class="method-start">30556 ms</span>
+                <span class="method-start">30246 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateErrorMessageOnLogin({searchvalue=, password=abcd345, email=wer1234@gmail.com, browser=chrome, errormessage=There is 1 er...)</span>
+                <span class="method-start">30246 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validateSearchInHomePage({searchvalue=Blouse, password=, email=, browser=chrome, errormessage=, TestCaseName=validateSearchIn...)</span>
-                <span class="method-start">30556 ms</span>
+                <span class="method-start">30246 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quitBrowser</span>
-                <span class="method-start">57272 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">quitBrowser</span>
-                <span class="method-start">72709 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateErrorMessageOnLogin({searchvalue=, password=abcd1234, email=abcd@gmail.com, browser=firefox, errormessage=There is 1 err...)</span>
+                <span class="method-start">30246 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.SignInPageTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateErrorMessageOnLoginSignInPage({searchvalue=, password=abcd1234, email=abcd@gmail.com, browser=firefox, errormessage=There is 1 err...)</span>
+                <span class="method-start">30246 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateErrorMessageOnLoginSignInPage({searchvalue=, password=abcd345, email=wer1234@gmail.com, browser=chrome, errormessage=There is 1 er...)</span>
+                <span class="method-start">30246 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.HomePageTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">72797 ms</span>
+                <span class="method-start">46861 ms</span>
               </div> <!-- configuration-suite after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">72981 ms</span>
+                <span class="method-start">47252 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

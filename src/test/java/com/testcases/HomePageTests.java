@@ -1,11 +1,13 @@
 package com.testcases;
 
+import java.lang.reflect.Method;
 import java.util.Hashtable;
 
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
+
+
 import org.testng.annotations.Test;
 
 import com.main.DriverManager;
@@ -22,14 +24,13 @@ public class HomePageTests extends BaseTest{
 	SignInPage signinpage;
 
 
+	
 
 
-
-	@Test(dataProviderClass=ExcelUtilities.class,dataProvider="dataProviderForIterations")
+	@Test
 	public void validateSearchInHomePage(Hashtable<String,String> data) throws Exception {
-		test=report.startTest("validateSearchInHomePage"+data.get("browser"));
+		test=report.startTest("validate Search In HomePage"+data.get("browser"));
 		ExtentFactory.setExtentTest(test);
-		
 		openBrowser(data.get("browser"));
 		navigateToURL(DriverManager.getDriver());
 		homepage=new HomePage(DriverManager.getDriver());
@@ -38,12 +39,12 @@ public class HomePageTests extends BaseTest{
 
 	}
 
-	//@Test(dataProviderClass=ExcelUtilities.class,dataProvider="dataProviderForIterations")
+	@Test
 	public void validateErrorMessageOnLogin(Hashtable<String,String> data) throws Exception {
-		test=report.startTest("validateSearchInHomePage"+data.get("browser"));
-		ExtentFactory.setExtentTest(test);
 		
-		System.out.println(data.get("browser"));
+		
+		test=report.startTest("validate Error Message On Login"+" :"+data.get("browser"));
+		ExtentFactory.setExtentTest(test);
 		openBrowser(data.get("browser"));
 		navigateToURL(DriverManager.getDriver());
 		homepage= new HomePage(DriverManager.getDriver());

@@ -3,6 +3,7 @@
 <suite thread-count="3" name="Suite" parallel="methods">
  <listeners>
 	<listener class-name="com.listener.ListenerClass"></listener>
+	<listener class-name="com.listener.AnnotationTransformer"></listener>
 	</listeners> 
   <test name="Test" >
     <classes>

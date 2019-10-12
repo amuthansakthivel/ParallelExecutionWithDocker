@@ -17,9 +17,6 @@ public class ExtentManager {
 	
 	public  ExtentReports getInstance() {
 		
-		
-		
-		
 		SimpleDateFormat formatter = new SimpleDateFormat("MMddyyyy_ hh_mm_ss");
 		Date date = new Date();
 		String currentDate = formatter.format(date);
@@ -28,7 +25,6 @@ public class ExtentManager {
 			if(DriverFactory.getResultPath().equals("")) 
 			{
 				extentreportpath=".\\ExtentReports\\Test Report.html";
-				
 			}
 			else {
 				extentreportpath=DriverFactory.getResultPath()+"\\ExtentReports\\Test Report.html";
@@ -48,11 +44,7 @@ public class ExtentManager {
 			}
 
 		}
-	
-		
-		
 		if(extent==null) {
-		
 			extent = new ExtentReports(extentreportpath,true,DisplayOrder.OLDEST_FIRST);
 			extent.loadConfig(new File(DriverFactory.getExtentConfigLocation()));
 		}

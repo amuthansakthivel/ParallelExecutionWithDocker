@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="26.714" tests="2" errors="0" skipped="0" failures="2">
+<testsuite name="TestSuite" time="47.694" tests="9" errors="0" skipped="0" failures="9">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_221\bin"/>
     <property name="java.vm.version" value="25.221-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\asakthiv\eclipse-workspace\UsingDocker"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -19,42 +20,43 @@
     <property name="java.runtime.version" value="1.8.0_221-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="basedir" value="C:\Users\asakthiv\eclipse-workspace\UsingDocker"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_221\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\asakthiv\AppData\Local\Temp\1\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\asakthiv\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf472333635771619392.tmp"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.6.1\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_221\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_221/bin/server;C:/Program Files/Java/jre1.8.0_221/bin;C:/Program Files/Java/jre1.8.0_221/lib/amd64;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin;C:\Program Files\Java\jdk1.8.0_221\bin;C:\apache-maven-3.6.1\bin;C:\Users\asakthiv\AppData\Local\Microsoft\WindowsApps;;C:\software\eclipse-jee-oxygen-3a-win32-x86_64\eclipse;;C:\Program Files (x86)\Micro Focus\Unified Functional Testing\\bin64;."/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin;C:\Program Files\Java\jdk1.8.0_221\bin;C:\apache-maven-3.6.1\bin;C:\Users\asakthiv\AppData\Local\Microsoft\WindowsApps;;."/>
     <property name="surefire.test.class.path" value="C:\Users\asakthiv\eclipse-workspace\UsingDocker\target\test-classes;C:\Users\asakthiv\eclipse-workspace\UsingDocker\target\classes;C:\Users\asakthiv\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\asakthiv\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\asakthiv\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\asakthiv\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\asakthiv\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\asakthiv\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\asakthiv\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\asakthiv\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\asakthiv\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\asakthiv\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\asakthiv\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\asakthiv\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\asakthiv\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\asakthiv\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\asakthiv\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\asakthiv\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\asakthiv\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\asakthiv\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\asakthiv\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\asakthiv\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\asakthiv\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\asakthiv\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\asakthiv\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\asakthiv\.m2\repository\org\apache\directory\studio\org.apache.commons.io\2.4\org.apache.commons.io-2.4.jar;C:\Users\asakthiv\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\asakthiv\.m2\repository\org\apache\poi\poi\3.9\poi-3.9.jar;C:\Users\asakthiv\.m2\repository\commons-codec\commons-codec\1.5\commons-codec-1.5.jar;C:\Users\asakthiv\.m2\repository\org\apache\poi\poi-ooxml\3.9\poi-ooxml-3.9.jar;C:\Users\asakthiv\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\asakthiv\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\asakthiv\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.9\poi-ooxml-schemas-3.9.jar;C:\Users\asakthiv\.m2\repository\org\apache\xmlbeans\xmlbeans\2.3.0\xmlbeans-2.3.0.jar;C:\Users\asakthiv\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\asakthiv\.m2\repository\org\apache\poi\poi-scratchpad\3.9\poi-scratchpad-3.9.jar;C:\Users\asakthiv\.m2\repository\org\apache\poi\ooxml-schemas\1.1\ooxml-schemas-1.1.jar;C:\Users\asakthiv\.m2\repository\org\apache\poi\openxml4j\1.0-beta\openxml4j-1.0-beta.jar;C:\Users\asakthiv\.m2\repository\log4j\log4j\1.2.8\log4j-1.2.8.jar;C:\Users\asakthiv\.m2\repository\org\apache\commons\commons-email\1.5\commons-email-1.5.jar;C:\Users\asakthiv\.m2\repository\com\sun\mail\javax.mail\1.5.6\javax.mail-1.5.6.jar;C:\Users\asakthiv\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\asakthiv\.m2\repository\javax\mail\javax.mail-api\1.6.0\javax.mail-api-1.6.0.jar;C:\Users\asakthiv\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\asakthiv\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\asakthiv\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\asakthiv\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\asakthiv\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\asakthiv\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\asakthiv\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\asakthiv\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.18.1\surefire-testng-utils-2.18.1.jar;C:\Users\asakthiv\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.18.1\surefire-grouper-2.18.1.jar;"/>
+    <property name="maven.conf" value="C:\apache-maven-3.6.1\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\apache-maven-3.6.1\bin\..\lib\jansi-native"/>
     <property name="user.home" value="C:\Users\asakthiv"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="asakthiv"/>
-    <property name="java.class.path" value="/C:/software/eclipse-jee-oxygen-3a-win32-x86_64/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.5.1.20150109-1819/jars/plexus-classworlds-2.5.1.jar"/>
-    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.class.path" value="C:\apache-maven-3.6.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_221\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_221"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="1.8.0_221"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_221\jre\classes;C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\java_shared\classes\jasmine.jar"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_221\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_221\lib\resources.jar;C:\Program Files\Java\jre1.8.0_221\lib\rt.jar;C:\Program Files\Java\jre1.8.0_221\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_221\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_221\lib\jce.jar;C:\Program Files\Java\jre1.8.0_221\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_221\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_221\classes;C:\Program Files (x86)\Micro Focus\Unified Functional Testing\bin\java_shared\classes\jasmine.jar"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\asakthiv\eclipse-workspace\UsingDocker\EMBEDDED"/>
+    <property name="maven.home" value="C:\apache-maven-3.6.1\bin\.."/>
     <property name="localRepository" value="C:\Users\asakthiv\.m2\repository"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
@@ -63,67 +65,490 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="validateSearchInHomePage" classname="com.testcases.HomePageTests" time="26.714">
-    <failure message="Reached error page: about:neterror?e=connectionFailure&amp;u=http%3A//automationpractice.com/index.php&amp;c=UTF-8&amp;f=regular&amp;d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20automationpractice.com.&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;INMAAWN53000190&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190827005903, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 70, moz:profile: /tmp/rust_mozprofile9p92YP, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.9.184-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 8800b8e3-3295-4ec7-855c-15a...}&#10;Session ID: 8800b8e3-3295-4ec7-855c-15a6ebf24d99" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=connectionFailure&u=http%3A//automationpractice.com/index.php&c=UTF-8&f=regular&d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20automationpractice.com.
+  <testcase name="validateErrorMessageOnLogin" classname="com.testcases.HomePageTests" time="15.803">
+    <failure message="cannot forward the request Failed to connect to /172.21.0.5:5555&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;INMAAWN53000190&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.Cxe1I7}, goog:chromeOptions: {debuggerAddress: localhost:33445}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 7880cd07a262609fa7731054b03...}&#10;Session ID: 7880cd07a262609fa7731054b0387fbc" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: cannot forward the request Failed to connect to /172.21.0.5:5555
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'INMAAWN53000190', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190827005903, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 70, moz:profile: /tmp/rust_mozprofile9p92YP, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.9.184-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 8800b8e3-3295-4ec7-855c-15a...}
-Session ID: 8800b8e3-3295-4ec7-855c-15a6ebf24d99
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.Cxe1I7}, goog:chromeOptions: {debuggerAddress: localhost:33445}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 7880cd07a262609fa7731054b03...}
+Session ID: 7880cd07a262609fa7731054b0387fbc
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.testcases.BaseTest.navigateToURL(BaseTest.java:168)
-	at com.testcases.HomePageTests.validateSearchInHomePage(HomePageTests.java:34)
-]]></failure>
-    <system-out><![CDATA[Name: /xl/workbook.xml - Content Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml
-after setting extent test
-after setting extent test
-]]></system-out>
-    <system-err><![CDATA[Oct 08, 2019 2:49:12 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+	at com.testcases.BaseTest.navigateToURL(BaseTest.java:178)
+	at com.testcases.HomePageTests.validateErrorMessageOnLogin(HomePageTests.java:49)
+</failure>
+    <system-err><![CDATA[Oct 09, 2019 2:44:13 PM org.openqa.selenium.remote.DesiredCapabilities firefox
 INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
-Oct 08, 2019 2:49:12 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+Oct 09, 2019 2:44:13 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Oct 08, 2019 2:49:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Oct 09, 2019 2:44:13 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+Oct 09, 2019 2:44:13 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Oct 09, 2019 2:44:13 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Oct 09, 2019 2:44:13 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+Oct 09, 2019 2:44:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Oct 08, 2019 2:49:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Oct 09, 2019 2:44:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 09, 2019 2:44:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="validateSearchInHomePage" classname="com.testcases.HomePageTests" time="42.151">
-    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;search_query_top&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='search_query_top']' (tried for 10 second(s) with 500 milliseconds interval)
+  <testcase name="validateErrorMessageOnLogin" classname="com.testcases.HomePageTests" time="16.536">
+    <failure message="Error forwarding the new session Error forwarding the request unexpected end of stream on Connection{172.21.0.9:5555, proxy=DIRECT hostAddress=/172.21.0.9:5555 cipherSuite=none protocol=http/1.1}&#10;Command duration or timeout: 15.54 seconds" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: Error forwarding the new session Error forwarding the request unexpected end of stream on Connection{172.21.0.9:5555, proxy=DIRECT hostAddress=/172.21.0.9:5555 cipherSuite=none protocol=http/1.1}
+Command duration or timeout: 15.54 seconds
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at com.testcases.BaseTest.openBrowser(BaseTest.java:223)
+	at com.testcases.HomePageTests.validateErrorMessageOnLogin(HomePageTests.java:48)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session Error forwarding the request unexpected end of stream on Connection{172.21.0.9:5555, proxy=DIRECT hostAddress=/172.21.0.9:5555 cipherSuite=none protocol=http/1.1}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INMAAWN53000190', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:118)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:69)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:865)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1242)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:503)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:103)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+]]></failure>
+    <system-err><![CDATA[Exception in thread "TestNG-test=Test-3" java.lang.NullPointerException
+	at com.reports.LogStatus.fail(LogStatus.java:19)
+	at com.listener.ListenerClass.onTestFailure(ListenerClass.java:37)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1042)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]></system-err>
+  </testcase>
+  <testcase name="validateErrorMessageOnLogin" classname="com.testcases.HomePageTests" time="16.536">
+    <failure message="java.util.concurrent.ExecutionException: java.lang.NullPointerException" type="org.testng.TestNGException">org.testng.TestNGException: java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at org.testng.internal.PoolService.submitTasksAndWait(PoolService.java:53)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:970)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.testng.internal.PoolService.submitTasksAndWait(PoolService.java:51)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:970)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException: null
+	at com.utilities.TestUtils.pullScreenshotPath(TestUtils.java:57)
+	at com.listener.ListenerClass.onTestFailure(ListenerClass.java:39)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="validateErrorMessageOnLoginSignInPage" classname="com.testcases.SignInPageTests" time="15.803">
+    <failure message="cannot forward the request Failed to connect to /172.21.0.6:5555&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;INMAAWN53000190&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.GGVpn9}, goog:chromeOptions: {debuggerAddress: localhost:46493}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 726a133f5b1b74608e28c76ebc5...}&#10;Session ID: 726a133f5b1b74608e28c76ebc53d647" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: cannot forward the request Failed to connect to /172.21.0.6:5555
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INMAAWN53000190', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.GGVpn9}, goog:chromeOptions: {debuggerAddress: localhost:46493}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 726a133f5b1b74608e28c76ebc5...}
+Session ID: 726a133f5b1b74608e28c76ebc53d647
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy28.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.utilities.TestUtils.explicitlyWait(TestUtils.java:47)
-	at com.utilities.TestUtils.sendKeys(TestUtils.java:40)
-	at com.pages.HomePage.enterValueToSearch(HomePage.java:33)
-	at com.testcases.HomePageTests.validateSearchInHomePage(HomePageTests.java:36)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.testcases.BaseTest.navigateToURL(BaseTest.java:178)
+	at com.testcases.SignInPageTests.validateErrorMessageOnLoginSignInPage(SignInPageTests.java:28)
 </failure>
+    <system-err><![CDATA[Oct 09, 2019 2:44:13 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+Oct 09, 2019 2:44:13 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Oct 09, 2019 2:44:13 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+Oct 09, 2019 2:44:13 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Oct 09, 2019 2:44:13 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Oct 09, 2019 2:44:13 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+Oct 09, 2019 2:44:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 09, 2019 2:44:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 09, 2019 2:44:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="validateErrorMessageOnLoginSignInPage" classname="com.testcases.SignInPageTests" time="16.464">
+    <failure message="Error forwarding the new session Error forwarding the request unexpected end of stream on Connection{172.21.0.12:5555, proxy=DIRECT hostAddress=/172.21.0.12:5555 cipherSuite=none protocol=http/1.1}&#10;Command duration or timeout: 15.46 seconds" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: Error forwarding the new session Error forwarding the request unexpected end of stream on Connection{172.21.0.12:5555, proxy=DIRECT hostAddress=/172.21.0.12:5555 cipherSuite=none protocol=http/1.1}
+Command duration or timeout: 15.46 seconds
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at com.testcases.BaseTest.openBrowser(BaseTest.java:223)
+	at com.testcases.SignInPageTests.validateErrorMessageOnLoginSignInPage(SignInPageTests.java:27)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session Error forwarding the request unexpected end of stream on Connection{172.21.0.12:5555, proxy=DIRECT hostAddress=/172.21.0.12:5555 cipherSuite=none protocol=http/1.1}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INMAAWN53000190', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:118)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:69)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:865)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1242)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:503)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:103)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+]]></failure>
+    <system-err><![CDATA[Exception in thread "TestNG-test=Test-2" java.lang.NullPointerException
+	at com.reports.LogStatus.fail(LogStatus.java:19)
+	at com.listener.ListenerClass.onTestFailure(ListenerClass.java:37)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1042)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]></system-err>
+  </testcase>
+  <testcase name="validateErrorMessageOnLoginSignInPage" classname="com.testcases.SignInPageTests" time="16.464">
+    <failure message="java.util.concurrent.ExecutionException: java.lang.NullPointerException" type="org.testng.TestNGException">org.testng.TestNGException: java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at org.testng.internal.PoolService.submitTasksAndWait(PoolService.java:53)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:970)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.testng.internal.PoolService.submitTasksAndWait(PoolService.java:51)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:970)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException: null
+	at com.utilities.TestUtils.pullScreenshotPath(TestUtils.java:57)
+	at com.listener.ListenerClass.onTestFailure(ListenerClass.java:39)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="validateSearchInHomePage" classname="com.testcases.HomePageTests" time="16.088">
+    <failure message="cannot forward the request Failed to connect to /172.21.0.3:5555&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;INMAAWN53000190&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.sZwRCU}, goog:chromeOptions: {debuggerAddress: localhost:46635}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: a9c66bc9babaaffe4268ad5b8b0...}&#10;Session ID: a9c66bc9babaaffe4268ad5b8b0babf1" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: cannot forward the request Failed to connect to /172.21.0.3:5555
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INMAAWN53000190', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.sZwRCU}, goog:chromeOptions: {debuggerAddress: localhost:46635}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: a9c66bc9babaaffe4268ad5b8b0...}
+Session ID: a9c66bc9babaaffe4268ad5b8b0babf1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.testcases.BaseTest.navigateToURL(BaseTest.java:178)
+	at com.testcases.HomePageTests.validateSearchInHomePage(HomePageTests.java:35)
+</failure>
+  </testcase>
+  <testcase name="validateSearchInHomePage" classname="com.testcases.HomePageTests" time="16.113">
+    <failure message="java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: Session [a9c66bc9babaaffe4268ad5b8b0babf1] was terminated due to FORWARDING_TO_NODE_FAILED&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;INMAAWN53000190&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.sZwRCU}, goog:chromeOptions: {debuggerAddress: localhost:46635}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: a9c66bc9babaaffe4268ad5b8b0...}&#10;Session ID: a9c66bc9babaaffe4268ad5b8b0babf1" type="org.testng.TestNGException">org.testng.TestNGException: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: Session [a9c66bc9babaaffe4268ad5b8b0babf1] was terminated due to FORWARDING_TO_NODE_FAILED
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INMAAWN53000190', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.sZwRCU}, goog:chromeOptions: {debuggerAddress: localhost:46635}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: a9c66bc9babaaffe4268ad5b8b0...}
+Session ID: a9c66bc9babaaffe4268ad5b8b0babf1
+	at org.testng.internal.PoolService.submitTasksAndWait(PoolService.java:53)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:970)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: Session [a9c66bc9babaaffe4268ad5b8b0babf1] was terminated due to FORWARDING_TO_NODE_FAILED
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INMAAWN53000190', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.sZwRCU}, goog:chromeOptions: {debuggerAddress: localhost:46635}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: a9c66bc9babaaffe4268ad5b8b0...}
+Session ID: a9c66bc9babaaffe4268ad5b8b0babf1
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.testng.internal.PoolService.submitTasksAndWait(PoolService.java:51)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:970)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Session [a9c66bc9babaaffe4268ad5b8b0babf1] was terminated due to FORWARDING_TO_NODE_FAILED
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INMAAWN53000190', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.sZwRCU}, goog:chromeOptions: {debuggerAddress: localhost:46635}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: a9c66bc9babaaffe4268ad5b8b0...}
+Session ID: a9c66bc9babaaffe4268ad5b8b0babf1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.utilities.TestUtils.pullScreenshotPath(TestUtils.java:57)
+	at com.listener.ListenerClass.onTestFailure(ListenerClass.java:39)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="validateSearchInHomePage" classname="com.testcases.HomePageTests" time="16.771">
+    <failure message="Error forwarding the new session Error forwarding the request Failed to connect to /172.21.0.4:5555&#10;Command duration or timeout: 15.77 seconds" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: Error forwarding the new session Error forwarding the request Failed to connect to /172.21.0.4:5555
+Command duration or timeout: 15.77 seconds
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at com.testcases.BaseTest.openBrowser(BaseTest.java:223)
+	at com.testcases.HomePageTests.validateSearchInHomePage(HomePageTests.java:34)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session Error forwarding the request Failed to connect to /172.21.0.4:5555
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INMAAWN53000190', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:118)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:69)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:865)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1242)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:503)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:103)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+]]></failure>
+    <system-err><![CDATA[Exception in thread "TestNG-test=Test-1" java.lang.NullPointerException
+	at com.reports.LogStatus.fail(LogStatus.java:19)
+	at com.listener.ListenerClass.onTestFailure(ListenerClass.java:37)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1042)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+log4j:WARN No appenders could be found for logger (freemarker.cache).
+log4j:WARN Please initialize the log4j system properly.
+]]></system-err>
   </testcase>
 </testsuite>

@@ -22,7 +22,7 @@ public class ListenerClass  implements ITestListener {
 	public void onTestStart(ITestResult result) {
 		
 		TestcaseName=result.getName();
-		System.out.println("after setting extent test");
+		
 		
 	}
 

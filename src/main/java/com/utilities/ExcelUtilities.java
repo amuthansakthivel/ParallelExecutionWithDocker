@@ -17,7 +17,7 @@ import com.main.DriverFactory;
 
 
 public class ExcelUtilities {
-	
+
 	String path;
 	String sheetname;
 	public  FileInputStream fis = null;
@@ -25,12 +25,14 @@ public class ExcelUtilities {
 	public XSSFWorkbook workbook = null;
 	public XSSFSheet sheet = null;
 
-	
+
+
+
 	/*
 	 * Takes rowname and sheetname as parameter
 	 * return row number based of rowname
 	 */
-		
+
 	public  int getRowNumForRowName(String sheetname,String rowName) {
 		int rownum=0;
 		sheet=workbook.getSheet(sheetname);
@@ -44,7 +46,7 @@ public class ExcelUtilities {
 		return rownum;
 	}
 
-	
+
 	/*
 	 * Takes columnname and sheetname as parameter
 	 * return column number based of columnheader
@@ -63,7 +65,7 @@ public class ExcelUtilities {
 		return colnum;
 
 	}
-	
+
 	/*
 	 * Takes sheetname as parameter
 	 * return last row number of the sheet
@@ -72,17 +74,17 @@ public class ExcelUtilities {
 		return workbook.getSheet(sheetname).getLastRowNum();
 	}
 
+
+
+
 	/*
 	 * Takes sheetname, row number as parameter
 	 * return last cell number of the row
 	 */
 	public  int getLastColumnNum(String sheetname, int rownum) {
-		
-		
-		
-		System.out.println(workbook);
+
 		return workbook.getSheet(sheetname).getRow(rownum).getLastCellNum();
-		
+
 	}
 
 
@@ -92,10 +94,10 @@ public class ExcelUtilities {
 	 */
 	public  String getCellContent(String sheetname,int rownum,int colnum) {
 		sheet=workbook.getSheet(sheetname);
-		
+
 		return sheet.getRow(rownum).getCell(colnum).getStringCellValue().concat("").toString();
 
-		
+
 	}
 
 	/*
@@ -104,7 +106,7 @@ public class ExcelUtilities {
 	 */
 	public  String getCellContent(String sheetname,int rownum,String columnname) {
 		sheet=workbook.getSheet(sheetname);
-		
+
 		return sheet.getRow(rownum).getCell(getColumnNumForColumnName(sheetname, columnname)).getStringCellValue().concat("").toString();
 
 	}
@@ -116,14 +118,14 @@ public class ExcelUtilities {
 	public  String getCellContent(String sheetname,String rowname,String columnname) {
 		sheet=workbook.getSheet(sheetname);
 		int rownum=getRowNumForRowName(sheetname, rowname);
-		System.out.println(rownum);
+
 		int colnum=getColumnNumForColumnName(sheetname, columnname);
-		System.out.println(colnum);
+
 		return sheet.getRow(rownum).getCell(colnum).getStringCellValue().concat("").toString();
 
 	}
 
-	
+
 	/*
 	 * 
 	 * DataProvider method used to provide data for multiple iterations.
@@ -134,17 +136,14 @@ public class ExcelUtilities {
 	@DataProvider(name="dataProviderForIterations",parallel=true)
 	public  Object[][] supplyDataForIterations(Method m){
 		try {
-		fis= new FileInputStream(DriverFactory.getTestDataLocation());
-		
-		workbook=new XSSFWorkbook(fis);
-	
-		sheet=workbook.getSheet(sheetname);
-		
+			fis= new FileInputStream(DriverFactory.getTestDataLocation());
+			workbook=new XSSFWorkbook(fis);
+			sheet=workbook.getSheet(sheetname);
 		}
 		catch(Exception e) {
-			
+
 		}
-		
+
 		return getDataForDataprovider(DriverFactory.getTestDataLocation(),"TestData",m.getName());
 	}
 
@@ -167,7 +166,7 @@ public class ExcelUtilities {
 		}
 		return b;
 	}
-	
+
 	/*
 	 * Used to return the rownumber of the test cases for multiple iterations.
 	 * Suppose if testcase 1 is available in row 4 and 7 is test data , it return the arraylist with values 4,7
@@ -179,9 +178,9 @@ public class ExcelUtilities {
 				a.add(i);
 			}
 		}
-			
+
 		return a;
 	}
 
-	
+
 }

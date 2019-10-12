@@ -22,7 +22,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
+import org.testng.SkipException;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 
@@ -57,17 +57,19 @@ public class BaseTest {
 		setUpExecutablesPath();
 		setUpExecutionMode();
 		setUpOtherProperties();
+		setUpRunModeForTestCases();
 		setUpDocker();
+		
 
+	}
+
+	private void setUpRunModeForTestCases() {
+		
 	}
 
 	private void setUpDocker() throws IOException, Exception {
 		if (DriverFactory.getExecutionMode().equalsIgnoreCase("Remote")) {
-			File file=new File("output.txt");
-			if(file.exists()) {
-				System.out.println("file deleted");
-			file.delete();
-			}
+			
 			Runtime runtime=Runtime.getRuntime();
 			runtime.exec("cmd /c start dockerUp.bat");
 			verifyDockerIsUp();
@@ -98,7 +100,10 @@ public class BaseTest {
 			currentline=reader.readLine();
 		}
 		reader.close();
-		Assert.assertTrue(flag);
+		
+		if(!flag) {
+			throw new SkipException("Docker have not started. Please try again or try manually.");
+		}
 	}
 
 	@BeforeClass
@@ -112,7 +117,11 @@ public class BaseTest {
 		if (DriverFactory.getExecutionMode().equalsIgnoreCase("Remote")) {
 			Runtime runtime=Runtime.getRuntime();
 			runtime.exec("cmd /c start dockerDown.bat");
-			
+			File file=new File("output.txt");
+			if(file.exists()) {
+				System.out.println("file deleted");
+			file.delete();
+			}
 		}
 	}
 
@@ -186,6 +195,9 @@ public class BaseTest {
 				System.setProperty("webdriver.gecko.driver", DriverFactory.getGeckoDriverExePath());
 				FirefoxOptions FFoptions= new FirefoxOptions();
 				FFoptions.addArguments("--incognito");
+				System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
+				System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"C:\\temp\\logs.txt");
+					 
 				driver= new FirefoxDriver(FFoptions);
 				break;
 			default:
