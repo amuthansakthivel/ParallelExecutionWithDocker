@@ -49,7 +49,7 @@ public class ExtentManager {
 			extent.loadConfig(new File(DriverFactory.getExtentConfigLocation()));
 		}
 		return extent;
-		
+		//returns Extent obj
 	}
 
 }
