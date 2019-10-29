@@ -9,7 +9,6 @@
     <classes>
       <class name="com.testcases.HomePageTests">
         <methods>
-          <include name="validateErrorMessageOnLogin" invocation-numbers="0 1"/>
           <include name="validateSearchInHomePage" invocation-numbers="1 0"/>
           <include name="tearDown"/>
           <include name="quitBrowser"/>

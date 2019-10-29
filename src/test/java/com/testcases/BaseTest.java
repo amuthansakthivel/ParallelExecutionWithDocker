@@ -82,7 +82,8 @@ public class BaseTest {
 			}
 			else {
 				runtime.exec("cmd /c start zaleniumUp.bat");
-				Thread.sleep(20000);
+				verifyDockerIsUp();
+				Thread.sleep(10000);
 			}
 		}
 	}
@@ -94,11 +95,10 @@ public class BaseTest {
 		boolean flag=false;
 		String file="output.txt";
 		BufferedReader reader= new BufferedReader(new FileReader(file));
-
 		String currentline=reader.readLine();
 
 		while(currentline!=null) {
-			if(currentline.contains("The node is registered to the hub and ready to use")) {
+			if((currentline.contains("The node is registered to the hub and ready to use"))||(currentline.contains("Zalenium is now ready!"))) {
 				flag=true;
 				break;
 			}
@@ -122,18 +122,20 @@ public class BaseTest {
 		if (DriverFactory.getExecutionMode().equalsIgnoreCase("Remote")) {
 			Runtime runtime=Runtime.getRuntime();
 			if(DriverFactory.getRemoteMode().equalsIgnoreCase("Selenium")) {
-				
 				runtime.exec("cmd /c start dockerDown.bat");
-				File file=new File("output.txt");
-				if(file.exists()) {
-					System.out.println("file deleted");
-					file.delete();
-				}
 			}
 			else {
 				runtime.exec("cmd /c start zaleniumDown.bat");
 			}
+			File file=new File("output.txt");
+			if(file.exists()) {
+				System.out.println("file deleted");
+				file.delete();
+			}
+			Thread.sleep(20000);
+			runtime.exec("taskkill /f /im cmd.exe") ;
 		}
+		
 	}
 
 	private void setUpOtherProperties() {
