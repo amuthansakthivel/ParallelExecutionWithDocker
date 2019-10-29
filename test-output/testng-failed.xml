@@ -18,15 +18,6 @@
           <include name="afterSuite"/>
         </methods>
       </class> <!-- com.testcases.HomePageTests -->
-      <class name="com.testcases.SignInPageTests">
-        <methods>
-          <include name="validateErrorMessageOnLoginSignInPage" invocation-numbers="0 1"/>
-          <include name="setUpExtentReports"/>
-          <include name="setUp"/>
-          <include name="quitBrowser"/>
-          <include name="afterSuite"/>
-        </methods>
-      </class> <!-- com.testcases.SignInPageTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

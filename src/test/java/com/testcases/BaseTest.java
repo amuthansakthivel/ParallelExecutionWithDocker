@@ -59,26 +59,31 @@ public class BaseTest {
 		setUpOtherProperties();
 		setUpRunModeForTestCases();
 		setUpDocker();
-		
+
 
 	}
 
 	private void setUpRunModeForTestCases() {
-		
+
 	}
 
 	private void setUpDocker() throws IOException, Exception {
 		if (DriverFactory.getExecutionMode().equalsIgnoreCase("Remote")) {
-			
 			Runtime runtime=Runtime.getRuntime();
-			runtime.exec("cmd /c start dockerUp.bat");
-			verifyDockerIsUp();
-			
-			runtime.exec("cmd /c start scaleChrome.bat");
-			Thread.sleep(10000);
-			runtime.exec("cmd /c start scaleFirefox.bat");
-			Thread.sleep(10000);
-			Runtime.getRuntime().exec("taskkill /f /im cmd.exe") ;
+			if(DriverFactory.getRemoteMode().equalsIgnoreCase("Selenium")) {
+
+				runtime.exec("cmd /c start dockerUp.bat");
+				verifyDockerIsUp();
+				runtime.exec("cmd /c start scaleChrome.bat");
+				Thread.sleep(10000);
+				runtime.exec("cmd /c start scaleFirefox.bat");
+				Thread.sleep(10000);
+				runtime.exec("taskkill /f /im cmd.exe") ;
+			}
+			else {
+				runtime.exec("cmd /c start zaleniumUp.bat");
+				Thread.sleep(20000);
+			}
 		}
 	}
 
@@ -89,9 +94,9 @@ public class BaseTest {
 		boolean flag=false;
 		String file="output.txt";
 		BufferedReader reader= new BufferedReader(new FileReader(file));
-	
+
 		String currentline=reader.readLine();
-		
+
 		while(currentline!=null) {
 			if(currentline.contains("The node is registered to the hub and ready to use")) {
 				flag=true;
@@ -100,7 +105,7 @@ public class BaseTest {
 			currentline=reader.readLine();
 		}
 		reader.close();
-		
+
 		if(!flag) {
 			throw new SkipException("Docker have not started. Please try again or try manually.");
 		}
@@ -116,11 +121,17 @@ public class BaseTest {
 	public void afterSuite() throws Exception {
 		if (DriverFactory.getExecutionMode().equalsIgnoreCase("Remote")) {
 			Runtime runtime=Runtime.getRuntime();
-			runtime.exec("cmd /c start dockerDown.bat");
-			File file=new File("output.txt");
-			if(file.exists()) {
-				System.out.println("file deleted");
-			file.delete();
+			if(DriverFactory.getRemoteMode().equalsIgnoreCase("Selenium")) {
+				
+				runtime.exec("cmd /c start dockerDown.bat");
+				File file=new File("output.txt");
+				if(file.exists()) {
+					System.out.println("file deleted");
+					file.delete();
+				}
+			}
+			else {
+				runtime.exec("cmd /c start zaleniumDown.bat");
 			}
 		}
 	}
@@ -128,6 +139,7 @@ public class BaseTest {
 	private void setUpOtherProperties() {
 		if(DriverFactory.getExecutionMode().equalsIgnoreCase("Remote")) {
 			DriverFactory.setGridPath(config.getProperty("RemoteURL"));
+			DriverFactory.setRemoteMode(config.getProperty("RemoteMode"));
 		}
 		DriverFactory.setTestDataLocation(config.getProperty("TestDataLocation"));
 		DriverFactory.setWaitTime(Integer.parseInt(config.getProperty("WaitTime")));
@@ -197,7 +209,7 @@ public class BaseTest {
 				FFoptions.addArguments("--incognito");
 				System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
 				System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"C:\\temp\\logs.txt");
-					 
+
 				driver= new FirefoxDriver(FFoptions);
 				break;
 			default:

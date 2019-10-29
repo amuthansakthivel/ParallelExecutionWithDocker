@@ -2,30 +2,30 @@
 <testng-results skipped="0" failed="0" ignored="4" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="16726" started-at="2019-10-09T09:14:13Z" finished-at="2019-10-09T09:14:30Z">
+  <suite name="Suite" duration-ms="14850" started-at="2019-10-29T03:51:11Z" finished-at="2019-10-29T03:51:26Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="16726" started-at="2019-10-09T09:14:13Z" finished-at="2019-10-09T09:14:30Z">
+    <test name="Test" duration-ms="14850" started-at="2019-10-29T03:51:11Z" finished-at="2019-10-29T03:51:26Z">
       <class name="com.testcases.HomePageTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testcases.HomePageTests@3419e23b]" name="setUp" is-config="true" duration-ms="30058" started-at="2019-10-09T09:13:43Z" finished-at="2019-10-09T09:14:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testcases.HomePageTests@34b27915]" name="setUp" is-config="true" duration-ms="30049" started-at="2019-10-29T03:50:41Z" finished-at="2019-10-29T03:51:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUpExtentReports()[pri:0, instance:com.testcases.HomePageTests@3419e23b]" name="setUpExtentReports" is-config="true" duration-ms="118" started-at="2019-10-09T09:14:13Z" finished-at="2019-10-09T09:14:13Z">
+        <test-method status="PASS" signature="setUpExtentReports()[pri:0, instance:com.testcases.HomePageTests@34b27915]" name="setUpExtentReports" is-config="true" duration-ms="154" started-at="2019-10-29T03:51:11Z" finished-at="2019-10-29T03:51:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpExtentReports -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcases.HomePageTests@3419e23b]" name="tearDown" is-config="true" duration-ms="391" started-at="2019-10-09T09:14:30Z" finished-at="2019-10-09T09:14:30Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcases.HomePageTests@34b27915]" name="tearDown" is-config="true" duration-ms="271" started-at="2019-10-29T03:51:26Z" finished-at="2019-10-29T03:51:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.testcases.HomePageTests@3419e23b]" name="afterSuite" is-config="true" duration-ms="12" started-at="2019-10-09T09:14:30Z" depends-on-methods="com.testcases.HomePageTests.tearDown" finished-at="2019-10-09T09:14:30Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.testcases.HomePageTests@34b27915]" name="afterSuite" is-config="true" duration-ms="8" started-at="2019-10-29T03:51:27Z" depends-on-methods="com.testcases.HomePageTests.tearDown" finished-at="2019-10-29T03:51:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.testcases.HomePageTests -->
       <class name="com.testcases.SignInPageTests">
-        <test-method status="PASS" signature="setUpExtentReports()[pri:0, instance:com.testcases.SignInPageTests@710d89e2]" name="setUpExtentReports" is-config="true" duration-ms="117" started-at="2019-10-09T09:14:13Z" finished-at="2019-10-09T09:14:13Z">
+        <test-method status="PASS" signature="setUpExtentReports()[pri:0, instance:com.testcases.SignInPageTests@29eda4f8]" name="setUpExtentReports" is-config="true" duration-ms="154" started-at="2019-10-29T03:51:11Z" finished-at="2019-10-29T03:51:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpExtentReports -->

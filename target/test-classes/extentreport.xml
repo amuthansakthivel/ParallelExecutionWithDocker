@@ -11,7 +11,7 @@
     
     <!-- protocol for script and stylesheets -->
     <!-- defaults to https -->
-    <protocol>https</protocol>
+    <protocol>http</protocol>
     
     <!-- title of the document -->
     <documentTitle>DATA DRIVEN TESTS</documentTitle>

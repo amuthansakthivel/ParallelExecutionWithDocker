@@ -18,7 +18,14 @@ public class DriverFactory {
 	private static String passedStepsScreenshots;
 	private static String failedStepsScreenshots;
 	private static String skippedStepsScreenshots;
+	private static String remoteMode;
 	
+	public static String getRemoteMode() {
+		return remoteMode;
+	}
+	public static void setRemoteMode(String remoteMode) {
+		DriverFactory.remoteMode = remoteMode;
+	}
 	public static String getPassedStepsScreenshots() {
 		return passedStepsScreenshots;
 	}
@@ -124,6 +131,7 @@ public class DriverFactory {
 	public static void setGeckoDriverExePath(String geckoDriverExePath) {
 		DriverFactory.geckoDriverExePath = geckoDriverExePath;
 	}
+	
 	
 
 }
